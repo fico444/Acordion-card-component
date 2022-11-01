@@ -7,13 +7,14 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script defer src="Js/main.js"></script>
 
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
-      font-size: 11px;
+      font-size: 2vw;
       text-align: center;
     }
 
@@ -45,7 +46,7 @@
 
       <ul>
 
-        <li>
+        <li onclick="selection(0)">
           <h2>How many team members can I invite?
             <img src="images/icon-arrow-down.svg" class="arrow">
           </h2>
@@ -57,7 +58,7 @@
 
         <hr>
 
-        <li class="active">
+        <li onclick="selection(1)" class="active">
           <h2 class="active">What is the maximum file upload size?
             <img src="images/icon-arrow-down.svg" class="imgActive">
           </h2>
@@ -68,7 +69,7 @@
 
         <hr>
 
-        <li>
+        <li onclick="selection(2)">
           <h2>How do I reset my password?
             <img src="images/icon-arrow-down.svg" class="arrow">
           </h2>
@@ -80,7 +81,7 @@
 
         <hr>
 
-        <li>
+        <li onclick="selection(3)">
           <h2>Can I cancel my subscription?
             <img src="images/icon-arrow-down.svg" class="arrow">
           </h2>
@@ -91,7 +92,7 @@
 
         <hr>
 
-        <li>
+        <li onclick="selection(4)">
           <h2>Do you provide additional support?
             <img src="images/icon-arrow-down.svg" class="arrow">
           </h2>
@@ -110,7 +111,7 @@
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://www.linkedin.com/in/federico-galache-de-toro-42ba4523b/">Galache de Toro Federico</a>.
     </div>
   </footer>
 </body>

@@ -97,7 +97,7 @@ h2[class="active"] {
     transition: all 0.3s;
 }
 
-h2:hover {
+li:hover h2, p{
     cursor: pointer;
     color: var(--SoftRed);
 }
@@ -118,10 +118,6 @@ h2:hover {
     left: 114%;
     width: 4%;
     height: auto;
-}
-
-li[class="active"] {
-    height: 5%;
 }
 
 p {
@@ -260,4 +256,8 @@ footer {
         margin: 3% 13% 0 16%;
     }
 
+    
+    .attribution {
+        font-size: 1vw;
+    }
 }
