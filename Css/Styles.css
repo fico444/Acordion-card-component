@@ -25,6 +25,7 @@
 
 li {
     list-style: none;
+    position: relative;
     transition: all 0.3s;
 }
 
@@ -32,7 +33,7 @@ body {
     background-image: linear-gradient(0deg, var(--SoftViolet) 0%, var(--SoftBlue) 100%);
 }
 
-/* Movile Images */
+/* Imagenes para movil */
 .bkgImgMovile {
     width: 74%;
     height: auto;
@@ -51,13 +52,13 @@ body {
     z-index: 2;
 }
 
-/* Desktop images are hidden */
+/* imagenes para Desktop estan ocultas */
 .imgDiv,
 .box {
     display: none;
 }
 
-/*Acordion*/
+/*Acordeon*/
 main {
     position: relative;
     background-color: white;
@@ -82,40 +83,45 @@ h1 {
     display: inline-block;
 }
 
-/* Questions */
+/* Preguntas */
 h2 {
     font-size: 3.5vw;
     font-weight: 400;
     margin: 5% 0 5% 7.5%;
-    color: var(--VeryDarkGrayishBlue);
-    position: relative;
+    color: var(--VeryDarkGrayishBlue);    
 }
 
 h2[class="active"] {
     font-weight: 700;
     margin: 5% 0 5% 7.5%;
-    transition: all 0.3s;
 }
 
-li:hover h2, p{
+li:hover{
+    cursor: pointer;
+}
+
+p:hover{
+    cursor: pointer;
+}
+
+h2:hover{
     cursor: pointer;
     color: var(--SoftRed);
 }
 
 .arrow {
     position: absolute;
-    top: 28%;
-    left: 89%;
-    width: 3.3%;
+    top: 12%;
+    left: 90%;
+    width: 4%;
     height: auto;
-    transition: all 0.3s;
 }
 
 .imgActive {
     transform: rotate(180deg);
     position: absolute;
-    top: 28%;
-    left: 114%;
+    top: 19%;
+    left: 90%;
     width: 4%;
     height: auto;
 }
@@ -124,7 +130,6 @@ p {
     font-size: 3.3vw;
     margin: -1% 13% 7% 7%;
     color: var(--VeryDarkGrayishBlue);
-    transition: all 0.3s;
 }
 
 /*Dividers*/
@@ -201,6 +206,10 @@ footer {
         display: flex;
         flex-direction: row;
     }
+    
+    article{
+        width: 80%;
+    }
 
     section{
         width: 58%;
@@ -213,6 +222,10 @@ footer {
     }
 
     /* Questions */
+    ul, li{
+        width: 100%;
+    }
+    
     h2 {
         font-size: 1.1vw;
         margin: 3% 0 1.6% 16%;
@@ -224,29 +237,23 @@ footer {
 
     .arrow {
         position: absolute;
-        top: 26%;
-        left: 73%;
+        top:-4%;
+        left: 77.5%;
         width: 2.5%;
         height: auto;
-        transition: all 0.3s;
     }
-
-    li[class="active"] {
-        width: 100%;
-    }
-
+    
     p {
         font-size: 1vw;
         margin: 1% 15% 1.3% 16.5%;
-        transition: all 0.3s;
     }
 
     .imgActive {
         transform: rotate(180deg);
         position: absolute;
-        top: 23%;
-        left: 123%;
-        width: 4%;
+        top: 15%;
+        left: 77.5%;
+        width: 2.5%;
         height: auto;
     }
 
